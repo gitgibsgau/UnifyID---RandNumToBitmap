@@ -15,8 +15,8 @@ import java.net.URL;
  */
 public class HTTPHandler {
 	
-	private final Integer x = 250;			//width of image
-	private final Integer y = 250;			//height of image
+	private final Integer x = 128;			//width of image
+	private final Integer y = 128;			//height of image
 	
 	public int[] image = new int[x*y];
 
@@ -43,7 +43,7 @@ public class HTTPHandler {
 		int ind = 0;
 		while ((IL = in.readLine()) != null) {
 			res.append(IL);
-			if(ind < 250*250) {
+			if(ind < 128*128) {
 				image[ind] = Integer.parseInt(IL);
 				ind++;
 			}
